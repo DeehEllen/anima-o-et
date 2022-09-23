@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: cal(80% / 2);
+    height: 500px;
+    background: url("et.png");
+    animation: animate 8s linear infinite;
+
+}
+
+.Pausar {
+    text-align: center;
+}
+
+@keyframes animate {
+    from {
+         background-position: 0;
+    }
+    to {
+        background-position: -1360px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+    section, aside {
+        width: 100%;
+        padding: 0;
+        
+    }
+    
+}

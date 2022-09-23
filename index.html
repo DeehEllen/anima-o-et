@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+
+	<title>ET</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+
+		@keyframes et {
+			from {
+				background-position: 0px;
+			}
+			to {
+				background-position: 600px;
+			}
+		}
+
+		.animacao {
+			width: 1700px;
+			height: 450px;
+			background-image: url("imagem/et.png");
+			animation: et .8s steps(8, end) infinite;
+
+		}
+	</style>
+	<script type="text/javascript">
+		function startAnimation() {
+			document.getElementById("animacao").style.animationPlayState="running"
+		}
+		function stopAnimation() {
+			document.getElementById("animacao").style.animationPlayState="paused"
+		}
+	</script>
+</head>
+<body>
+
+
+	<div id="animacao" class="animacao"></div>
+        <center>
+		<button id="Pausar" name="Pausar" onclick="stopAnimation()">Pausar</button>
+		<button id="Animar" name="Animar" onclick="startAnimation()">Animar</button>
+	    </center>
+
+</body>
+</html>
